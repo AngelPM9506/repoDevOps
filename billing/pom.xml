@@ -108,7 +108,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.9.6</version>
+                <version>3.8.0</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.source}</target>
@@ -132,7 +132,7 @@
                         </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
-                        <arg>-Dendorsed.dirs=${endorsed.dir}</arg>
+                        <!-- <arg>-Dendorsed.dirs=${endorsed.dir}</arg> -->
                         <arg>--add-opens</arg>
                         <arg>jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
                         <arg>--add-opens</arg>
